@@ -14,11 +14,6 @@ def projects():
 def contact():
     return render_template('contact.html')
 
-@app.route('/resume')
-def resume():
-    return send_from_directory('static', 'resume.pdf')
-
-
 if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 5000))
