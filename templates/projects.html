@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<h1 class="text-center mb-5">My Projects</h1>
+
+<div class="row">
+    <!-- Project 1 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+            <img src="{{ url_for('static', filename='ScriptsLogo.svg') }}" class="card-img-top p-4" alt="Scripts App Logo" style="height: 200px; object-fit: contain;">
+            <div class="card-body">
+                <h5 class="card-title">Scripts (Coming Soon!)</h5>
+                <p class="card-text">
+                    Scripts is an iOS app that compiles religious and philosophical texts into one cohesive library, encouraging deep study and interfaith dialogue. Written in Swift.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+            <img src="{{ url_for('static', filename='MINDCAPSULE.svg') }}" class="card-img-top p-4" alt="MindCapsule App Logo" style="height: 200px; object-fit: contain;">
+            <div class="card-body">
+                <h5 class="card-title">MindCapsule (Beta)</h5>
+                <p class="card-text">
+                    MindCapsule is a cross-platform app designed to preserve memories, build legacies, and plan for the future. Currently in closed beta, launching Q4 2025. Written in Swift/Kotlin.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+            <img src="{{ url_for('static', filename='LIONS.svg') }}" class="card-img-top p-4" alt="Lions Museum App Logo" style="height: 200px; object-fit: contain;">
+            <div class="card-body">
+                <h5 class="card-title">Lions Museum App</h5>
+                <p class="card-text">
+                    An iOS app for the Texas Lions Museum, allowing users to record testimonials about their Lions Club experience. Helps the museum create lasting memory compilations. Written in Swift.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
